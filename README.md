@@ -28,3 +28,9 @@ console.log(stringAmount);
   * Indian Currency Units
   * No Dependencies
 
+## Author 
+Pawan Kumar Bishnoi
+
+## Suggestions And Issues
+Email : pawanbishnoi9383@gmail.com
+
