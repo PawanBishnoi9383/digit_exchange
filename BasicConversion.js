@@ -41,7 +41,7 @@ function getConversion(am){
             return "Eleven";
         }
         case 12:{
-            return "Twelev";
+            return "Twelve";
         }
         case 13:{
             return "Thirteen";
@@ -50,7 +50,7 @@ function getConversion(am){
             return "Fourteen";
         }
         case 15:{
-            return "Fiveteen";
+            return "Fifteen";
         }
         case 16:{
             return "Sixteen";

@@ -1,5 +1,5 @@
 # digit_exchange
-A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Nintey Eight Crore Seventy Six Lacs Fifty Four Thousand Three Hundred Tewnty One
+A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Ninety Eight Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One
 
 
 ## Installation
@@ -26,7 +26,7 @@ console.log(stringAmount);
   * Fast Conversion
   * Huge Conversion Range i.e Upto 99 Arab
   * Indian Currency Units
-  * No Dependencies
+  * No Other Dependencies Required
 
 ## Author 
 Pawan Kumar Bishnoi
