@@ -6,7 +6,7 @@ function getAmount(len,amnt,amountLength){
     for(var i =0;i<len;i++){
         am +=amnt.shift();
     }
-    amountString += ' '+getCoversion(am);
+    amountString += amountString.length == 0 ? getCoversion(am) : ' '+getCoversion(am);
     amountString += ' '+getUnit(amountLength);
     return amnt;
 }
