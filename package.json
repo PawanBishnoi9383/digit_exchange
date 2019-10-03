@@ -1,6 +1,6 @@
 {
   "name": "digit_exchange",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Nintey Eight Crore Seventy Six Lacs Fifty Four Thousand Three Hundred Tewnty One",
   "main": "StartCalculationProcess.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "digit_exchange"
+    "url": "https://github.com/PawanBishnoi9383/digit_exchange"
   },
   "keywords": [
     "exchange",
