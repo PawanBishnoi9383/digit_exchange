@@ -45,13 +45,13 @@ console.log(stringAmount);
 ##### Version 2.0.0
 - Negative Amount Handling
 
-##### 1.0.2
+##### Version 1.0.2
 - Formatting Fixed  
 
-##### 1.0.1
+##### Version 1.0.1
 - Minor package tweaks
 
-##### 1.0.0
+##### Version 1.0.0
 - Initial release
 
 ## Author 
