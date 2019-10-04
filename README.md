@@ -1,6 +1,11 @@
 # digit_exchange
-A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Ninety Eight Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One
+A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Ninety Eight Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One.
 
+## Note
+- Float Amount Will Converted In Integers
+- Negative Amount Results In General String i.e -123 to One Hundred Three
+- Amount Upto 11 Digits Converted To String
+- Coversion Process Uses Only Indian Currency Units.
 
 ## Installation
 
