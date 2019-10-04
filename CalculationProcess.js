@@ -11,11 +11,11 @@ function getAmount(len,amnt,amountLength){
     return amnt;
 }
 function hitCalculationProcess(amountLength,amt){
-    if(amountLength == 5 || amountLength == 7 || amountLength == 9 || amountLength == 11){
+    if(amountLength == 5 || amountLength == 7 || amountLength == 9 || amountLength == 11 || amountLength == 13){
         return getAmount(2,amt,amountLength)
     }
     else{
-        if( amountLength == 3 || amountLength == 4 || amountLength == 6 || amountLength == 8 || amountLength == 10 ){
+        if( amountLength == 3 || amountLength == 4 || amountLength == 6 || amountLength == 8 || amountLength == 10 || amountLength == 12){
             return getAmount(1,amt,amountLength);
         }
         else{
