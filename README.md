@@ -3,7 +3,7 @@ A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currenc
 
 ## Note
 - Float Amount Will Converted In Integers
-- Negative Amount Results In General String i.e -123 to One Hundred Three
+- Negative Amount Results In General String i.e -123 to One Hundred Twenty Three
 - Amount Upto 13 Digits Converted To String
 - Coversion Process Uses Only Indian Currency Units
 
@@ -35,7 +35,7 @@ console.log(stringAmount);
 
 ### Change Log
 
-##### Version 5.0.0 
+##### Version 5.0.1 
 - Final Release
 
 ##### Version 4.1.1 
