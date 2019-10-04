@@ -42,7 +42,7 @@ console.log(stringAmount);
 - Float Amount Handling
 
 ##### Version 3.0.0
-- Bug Fixed `BasiConversion`
+- Bug Fixed `BasicConversion`
 
 ##### Version 2.0.1
 - String Amount Handling
