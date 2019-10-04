@@ -1,4 +1,7 @@
 function getUnit(amountLength){
+    if(amountLength == 12 || amountLength ==13){
+        return "Kharab";
+    }
     if(amountLength == 10 || amountLength ==11){
         return "Arab";
     }
