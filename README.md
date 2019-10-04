@@ -28,6 +28,32 @@ console.log(stringAmount);
   * Indian Currency Units
   * No Other Dependencies Required
 
+### Change Log
+
+##### Version 4.1.1 
+- Final Release
+
+##### Version 3.1.1
+- Float Amount Handling
+
+##### Version 3.0.0
+- Bug Fixed `BasiConversion`
+
+##### Version 2.0.1
+- String Amount Handling
+
+##### Version 2.0.0
+- Negative Amount Handling
+
+##### 1.0.2
+- Formatting Fixed  
+
+##### 1.0.1
+- Minor package tweaks
+
+##### 1.0.0
+- Initial release
+
 ## Author 
 Pawan Kumar Bishnoi
 
