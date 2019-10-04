@@ -7,8 +7,7 @@ function getConversion(am){
             return "";
         }
         case 1:{
-            amountString+=" "+"One";
-            break;
+            return "One";
         }
         case 2:{
             return "Two";
