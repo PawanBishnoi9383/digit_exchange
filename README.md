@@ -4,7 +4,7 @@ A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currenc
 ## Note
 - Float Amount Will Converted In Integers
 - Negative Amount Results In General String i.e -123 to One Hundred Three
-- Amount Upto 11 Digits Converted To String
+- Amount Upto 13 Digits Converted To String
 - Coversion Process Uses Only Indian Currency Units
 
 ## Installation
@@ -29,14 +29,17 @@ console.log(stringAmount);
 ## Features
 
   * Fast Conversion
-  * Huge Conversion Range i.e Upto 99 Arab
+  * Huge Conversion Range i.e Upto 99 Kharab Or 13 Digits
   * Indian Currency Units
   * No Other Dependencies Required
 
 ### Change Log
 
-##### Version 4.1.1 
+##### Version 5.0.0 
 - Final Release
+
+##### Version 4.1.1 
+- Amount Limit Expended To 13 Digits
 
 ##### Version 3.1.1
 - Float Amount Handling
@@ -58,6 +61,9 @@ console.log(stringAmount);
 
 ##### Version 1.0.0
 - Initial release
+
+## Indian Currency Units
+- [Indian Numbering System](https://en.wikipedia.org/wiki/Indian_numbering_system)  
 
 ## Author 
 Pawan Kumar Bishnoi
