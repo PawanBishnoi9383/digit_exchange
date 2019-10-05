@@ -15,7 +15,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 $ npm install digit_exchange
 ```
 
-## Example Use
+## Currency Conversion Example Use
 
 ```js
 const DigitExchange = require('digit_exchange')
@@ -26,17 +26,29 @@ var stringAmount = DigitExchange(digitAmount);
 
 console.log(stringAmount);
 ```
+## Ordinary Conversion Example Use
+
+```js
+const NumberExchange = require('digit_exchange/Number.js')
+
+var number = 987654321;
+
+var stringNumber = NumberExchange(number);
+
+console.log(stringNumber);
+
 ## Features
 
   * Fast Conversion
   * Huge Conversion Range i.e Upto 99 Kharab Or 13 Digits
   * Indian Currency Units
   * No Other Dependencies Required
+  * Ordinary Numbers Can Converted Of Infinte Range 
 
 ### Change Log
 
-##### Version 5.0.1 
-- Final Release
+##### Version 5.1.1 
+- Ordinary Numbers Conversion Support !!!
 
 ##### Version 4.1.1 
 - Amount Limit Expended To 13 Digits

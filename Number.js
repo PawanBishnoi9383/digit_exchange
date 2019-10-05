@@ -20,3 +20,4 @@ function startProcess(number){
     }
     return NumberString;
 }
+module.exports = startProcess;
