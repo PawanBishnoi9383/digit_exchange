@@ -36,6 +36,7 @@ var number = 987654321;
 var stringNumber = NumberExchange(number);
 
 console.log(stringNumber);
+```
 
 ## Features
 
