@@ -1,4 +1,4 @@
-const validateAmount = require('./PerformAmountValidation');
+const validateAmount = require('../utils/PerformAmountValidation');
 const startConversionProcess = require('./ConversionProcess');
 function getAmountString(amount){
     let _amount = amount;

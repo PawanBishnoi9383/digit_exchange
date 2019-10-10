@@ -1,4 +1,4 @@
-const getCoversion = require('./BasicConversion');
+const getCoversion = require('../utils/BasicConversion');
 const getUnit = require('./CurrencyUnit');
 let amountString = '';
 function getAmount(len,amnt,amountLength){
