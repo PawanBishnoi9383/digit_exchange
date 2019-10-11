@@ -44,7 +44,7 @@
     "digit to text"
   ],
   "license": "ISC",
-  "main": "StartCalculationProcess.js",
+  "main": "index.js",
   "name": "digit_exchange",
   "repository": {
     "type": "git",
