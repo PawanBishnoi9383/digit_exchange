@@ -1,4 +1,8 @@
 function ordinal(number,options){
+    if(isNaN(number))
+        throw new Error("Number Must Contains Digits Only");
+    if(typeof number == 'number')
+        number = parseInt(number);
     number = number.toString();
     let flag = number.substr(number.length-1);
     if(flag == "1" && number.substr(number.length-2) != '11')
