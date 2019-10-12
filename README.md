@@ -9,14 +9,16 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 $ npm install digit_exchange
 ```
 
-## Example Use
+## Include digit_exchange To Your Project 
 
 ```js
-// include digit_exchange to project
-const digitExchange = require('digit_exchange')
+const digitExchange = require('digit_exchange');
+```
+
+## Digit To Amount String
+```js
 
 // Wants Only Convert Digit Amount To String 
-
 var digitAmount = 987654321;
 
 var stringAmount = digitExchange.getAmountString(digitAmount);
@@ -25,14 +27,16 @@ console.log(stringAmount);
 // output : Ninety Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One
 
 // Wants To Add Your Own String Before Or After Converted Amount  
-
 var digitAmount = 987654321;
 
 var stringAmount = digitExchange.getAmountString(digitAmount,{prefix:"Rupees",suffix:"Only /-"});
 
 console.log(stringAmount);
-
 // output : Rupees Ninety Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One Only /-
+
+```
+## Digit To Ordinary Numbers String
+```js
 
 // Wants To Convert Digits To Ordinary Numbers
 var digits = 987654321;
@@ -50,6 +54,9 @@ var digitString = digitExchange.getNumberString(digits,{prefix:"Mobile :"});
 console.log(digitString);
 // output : Mobile: Nine Eight Seven Six Five Four Three Two One
 
+```
+## Seprators In Amount
+```js
 // Wants To Add Seprator In Your Amount.By Default It Seprates Amount According To Indian Currency Units
 var amount = 987654321;
 
@@ -66,7 +73,10 @@ var sepratedAmount = digitExchange.getSepratedAmount(amount,{unit:"USD",prefix:"
 console.log(digitString);
 // output : $ 987,654,321 Only /-
 
-// Wants A Number In Ordinal 
+```
+## Ordinal Number
+```js
+// Want Ordinal Number
 var number = 23;
 
 var ordinalNumber = digitExchange.getOrdinalNumber(number);
@@ -74,16 +84,14 @@ var ordinalNumber = digitExchange.getOrdinalNumber(number);
 console.log(ordinalNumber);
 // output : 23rd
 
-// Wants A Number In Ordinal With Your Own Text 
+// Want Ordinal Number With Own Text
 var number = 23;
 
-var ordinalNumber = digitExchange.getOrdinalNumber(number,{prefix:"Date ",suffix:"of June"});
+var ordinalNumber = digitExchange.getOrdinalNumber(number,{prefix:"Date",suffix:"June" });
 
 console.log(ordinalNumber);
-// output : Date 23rd of June
-
+// output : Date 23rd June
 ```
-
 ## Note To Use Currency Conversion
 - Float Amount Will Converted In Integers
 - Negative Amount Results In General String i.e -123 to One Hundred Twenty Three
@@ -140,7 +148,7 @@ console.log(ordinalNumber);
 Pawan Kumar Bishnoi
 
 ## Contributor
--[Sumil Jain](https://github.com/techhandler)
+- [Sumil Jain](https://github.com/techhandler)
 
 ## Suggestions And Issues
 Email : pawanbishnoi9383@gmail.com
