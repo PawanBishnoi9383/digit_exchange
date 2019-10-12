@@ -114,6 +114,10 @@ console.log(ordinalNumber);
 
 ### Change Log
 
+#### Version 6.0.0
+- Ordinal Number Support
+- Seprators Support Indian And Western
+
 ##### Version 5.1.1 
 - Ordinary Numbers Conversion Support !!!
 
