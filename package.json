@@ -39,9 +39,13 @@
     "currency",
     "digit",
     "digit to string",
-    "string",
-    "convertor",
-    "digit to text"
+    "digit to text",
+    "ordinal",
+    "ordinal numbers",
+    "digits to ordinal numbers",
+    "amount seprator",
+    "indian currency",
+    "numbers to string"
   ],
   "license": "ISC",
   "main": "index.js",
