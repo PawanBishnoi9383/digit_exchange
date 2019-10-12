@@ -1,4 +1,5 @@
-let formatCurrency = require('./currencyFormatter/StartCalculationProcess');
-let formatNumber = require('./numberFormatter/Number');
+let getAmountString = require('./currencyFormatter/StartCalculationProcess');
+let getNumberString = require('./numberFormatter/Number');
+let getSepratedAmount = require('./seprator/sepration.js')
 
-module.exports = {formatCurrency, formatNumber};
+module.exports = {getAmountString, getNumberString,getSepratedAmount};
