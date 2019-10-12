@@ -9,16 +9,79 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 $ npm install digit_exchange
 ```
 
-## Currency Conversion Example Use
+## Example Use
 
 ```js
-const DigitExchange = require('digit_exchange')
+// include digit_exchange to project
+const digitExchange = require('digit_exchange')
+
+// Wants Only Convert Digit Amount To String 
 
 var digitAmount = 987654321;
 
-var stringAmount = DigitExchange(digitAmount);
+var stringAmount = digitExchange.getAmountString(digitAmount);
 
 console.log(stringAmount);
+// output : Ninety Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One
+
+// Wants To Add Your Own String Before Or After Converted Amount  
+
+var digitAmount = 987654321;
+
+var stringAmount = digitExchange.getAmountString(digitAmount,{prefix:"Rupees",suffix:"Only /-"});
+
+console.log(stringAmount);
+
+// output : Rupees Ninety Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One Only /-
+
+// Wants To Convert Digits To Ordinary Numbers
+var digits = 987654321;
+
+var digitString = digitExchange.getNumberString(digits);
+
+console.log(digitString);
+// output : Nine Eight Seven Six Five Four Three Two One
+
+// Wants To Add Your Own String After Or Before Converted Digits To Ordinary String Numbers
+var digits = 987654321;
+
+var digitString = digitExchange.getNumberString(digits,{prefix:"Mobile :"});
+
+console.log(digitString);
+// output : Mobile: Nine Eight Seven Six Five Four Three Two One
+
+// Wants To Add Seprator In Your Amount.By Default It Seprates Amount According To Indian Currency Units
+var amount = 987654321;
+
+var sepratedAmount = digitExchange.getSepratedAmount(amount);
+
+console.log(digitString);
+// output : 98,76,54,321
+
+// Wants To Add Seprator In Your Amount According To Western Currency Units i.e USD
+var amount = 987654321;
+
+var sepratedAmount = digitExchange.getSepratedAmount(amount,{unit:"USD",prefix:"$",suffix:"Only /-"});
+
+console.log(digitString);
+// output : $ 987,654,321 Only /-
+
+// Wants A Number In Ordinal 
+var number = 23;
+
+var ordinalNumber = digitExchange.getOrdinalNumber(number);
+
+console.log(ordinalNumber);
+// output : 23rd
+
+// Wants A Number In Ordinal With Your Own Text 
+var number = 23;
+
+var ordinalNumber = digitExchange.getOrdinalNumber(number,{prefix:"Date ",suffix:"of June"});
+
+console.log(ordinalNumber);
+// output : Date 23rd of June
+
 ```
 
 ## Note To Use Currency Conversion
@@ -26,18 +89,6 @@ console.log(stringAmount);
 - Negative Amount Results In General String i.e -123 to One Hundred Twenty Three
 - Amount Upto 13 Digits Converted To String
 - Coversion Process Uses Only Indian Currency Units
-
-## Ordinary Conversion Example Use
-
-```js
-const NumberExchange = require('digit_exchange/Number.js')
-
-var number = 987654321;
-
-var stringNumber = NumberExchange(number);
-
-console.log(stringNumber);
-```
 
 ## Note To Use Ordinary Conversion
 - Float Number Will Converted In Integers
@@ -87,6 +138,9 @@ console.log(stringNumber);
 
 ## Author 
 Pawan Kumar Bishnoi
+
+## Contributor
+-[Sumil Jain](https://github.com/techhandler)
 
 ## Suggestions And Issues
 Email : pawanbishnoi9383@gmail.com
