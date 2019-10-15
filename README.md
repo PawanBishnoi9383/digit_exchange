@@ -1,5 +1,5 @@
 # digit_exchange
-A Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Ninety Eight Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One.
+An Easy To Use JS Library To Convert Your Amount Digits To Text In Indian Currency Units. For Example 987654321 Gives Ninety Eight Crore Seventy Six Lakh Fifty Four Thousand Three Hundred Twenty One.
 
 ## Installation
 
@@ -38,21 +38,23 @@ console.log(stringAmount);
 ## Digit To Ordinary Numbers String
 ```js
 
-// Wants To Convert Digits To Ordinary Numbers
-var digits = 987654321;
+// To convert digits to ordinary numbers use  
+digitExchange.getNumberString(987654321); // Nine Eight Seven Six Five Four Three Two One
 
-var digitString = digitExchange.getNumberString(digits);
+// To convert float number give a String to replace the decimal
+digitExchange.getNumberString(964.54, {decimalValue:"Decimal"}); // Nine Six Four Decimal Five Four 
+digitExchange.getNumberString(964.54, {decimalValue:"Point"}); // Nine Six Four Point Five Four 
+digitExchange.getNumberString(964.54, {decimalValue:"-"}); // Nine Six Four - Five Four 
 
-console.log(digitString);
-// output : Nine Eight Seven Six Five Four Three Two One
+// To add a String before or after 
+digitExchange.getNumberString(96454, {prefix:"Code:"}); // Code: Nine Six Four Five Four
+digitExchange.getNumberString(4, {suffix:"years"}); // Four years
 
-// Wants To Add Your Own String After Or Before Converted Digits To Ordinary String Numbers
-var digits = 987654321;
+// To convert a negative number give a string to replace the negative sign
+digitExchange.getNumberString(-364, {signValue:"Minus"}); // Minus Three Six Four
+digitExchange.getNumberString(-364, {signValue:"Negative"}); // Negative Three Six Four
 
-var digitString = digitExchange.getNumberString(digits,{prefix:"Mobile :"});
-
-console.log(digitString);
-// output : Mobile: Nine Eight Seven Six Five Four Three Two One
+digitExchange.getNumberString(-1.2, {signValue:"-", decimalValue:"Point"}); // - One Point Two  
 
 ```
 ## Seprators In Amount
@@ -99,8 +101,6 @@ console.log(ordinalNumber);
 - Coversion Process Uses Only Indian Currency Units
 
 ## Note To Use Ordinary Conversion
-- Float Number Will Converted In Integers
-- Negative Numbers Results In General String i.e -123 to One Two Three
 - Number Upto 15 Digits Converted To String
 - Digit More Than 15 Must Be In String Format i.e "123546454436463463463468" 
 
